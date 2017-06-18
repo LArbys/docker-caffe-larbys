@@ -10,4 +10,5 @@ RUN mkdir -p /usr/local/larbys/ && \
     git clone https://github.com/LArbys/ssnet_example && \
     cd ssnet_example && git checkout tmw_container && \
     cd sw && chmod +x setup.sh && ls -lh && \
-    bash -c "source setup.sh"
+    bash -c "source setup.sh" && \
+    apt-get autoremove -y && apt-get clean -y
